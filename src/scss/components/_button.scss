@@ -1,0 +1,9 @@
+@use "abstract/variable" as v;
+@use "abstract/mixin" as m;
+
+.button {
+  @include m.boton(v.$blanco, v.$negro);
+  &__black {
+    @include m.boton(v.$negro, v.$blanco);
+  }
+}
