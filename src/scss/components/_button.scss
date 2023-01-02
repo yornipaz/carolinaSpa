@@ -2,8 +2,8 @@
 @use "abstract/mixin" as m;
 
 .button {
-  @include m.boton(v.$blanco, v.$negro);
+  @include m.button(v.$white, v.$black);
   &__black {
-    @include m.boton(v.$negro, v.$blanco);
+    @include m.button(v.$black, v.$white);
   }
 }

@@ -10,13 +10,69 @@
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header container ">
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="dist/img/logo.svg" alt="logo spa">
+            </div>
+            <nav class="network">
+                <a class="network__link" href="https://facebook.com">
+                    <span class="network__access"></span>
+                </a>
+                <a class="network__link" href="https://twitter.com">
+                    <span class="network__access">Twitter</span>
+                </a>
+                <a class="network__link" href="https://instagram.com">
+                    <span class="network__access">Instagram</span>
+                </a>
+                <a class="network__link" href="https://youtube.com">
+                    <span class="network__access">Youtube</span>
+                </a>
+                <a class="network__link" href="https://tiktok.com">
+                    <span class="network__access">Tiktok</span>
+                </a>
 
-
-
+            </nav>
+        </div>
 
     </header>
 
+    <div class="navigation">
+        <div class="navigation__border">
+            <nav class="navigation__container"><a href="#" class="navigation__link">Inicio</a><a href="#"
+                    class="navigation__link">Nosotros</a><a href="#" class="navigation__link">Servicios</a><a href="#"
+                    class="navigation__link">Produtos</a><a href="#" class="navigation__link">Contactos</a></nav>
+        </div>
+    </div>
+
+    <section class="slider">
+        <ul class="slider__container">
+            <li class="slider__item">
+                <picture>
+                    <source srcset="dist/img/slide_01.avif " type="image/avif">
+                    <source srcset="dist/img/slide_01.webp  " type="image/webp">
+                    <source srcset="dist/img/slide_01.jpg  " type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_01.jpg" lazyalt="imagen">
+                </picture>
+            </li>
+            <li class="slider__item">
+                <picture>
+                    <source srcset="dist/img/slide_02.avif " type="image/avif">
+                    <source srcset="dist/img/slide_02.webp  " type="image/webp">
+                    <source srcset="dist/img/slide_02.jpg  " type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_02.jpg" lazyalt="imagen">
+                </picture>
+            </li>
+            <li class="slider__item">
+                <picture>
+                    <source srcset="dist/img/slide_03.avif " type="image/avif">
+                    <source srcset="dist/img/slide_03.webp  " type="image/webp">
+                    <source srcset="dist/img/slide_03.jpg  " type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_03.jpg" lazyalt="imagen">
+                </picture>
+            </li>
+        </ul>
+    </section>
 
 
     <footer class="footer">
