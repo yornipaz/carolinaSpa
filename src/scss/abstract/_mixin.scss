@@ -229,3 +229,18 @@
     );
   }
 }
+@mixin headingCursive() {
+  text-align: center;
+  color: v.$secondary;
+  font-family: v.$font-secondary;
+  line-height: 0.8;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 4rem;
+  span {
+    color: v.$black;
+    text-transform: uppercase;
+    display: block;
+    font-family: v.$font-primary;
+  }
+}
