@@ -1,0 +1,39 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+.card {
+  max-width: 35rem;
+  margin: 0 auto 2rem auto;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include m.screen("md") {
+    max-width: unset;
+    margin: 0;
+  }
+  &__img {
+    width: 100%;
+    border: 5px solid v.$white;
+    transition-property: rotate scale;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+      transform: rotate(4deg) scale(1.2);
+    }
+  }
+  &__body {
+    max-width: 90%;
+    margin: 0 auto;
+
+    background-color: v.$white;
+    transform: translateY(-5rem);
+  }
+  &__title {
+    @include m.headingCursive;
+    font-size: 3.2rem;
+    padding: 2rem;
+  }
+  &__link {
+    @include m.button(v.$secondary, v.$white);
+    display: block;
+  }
+}

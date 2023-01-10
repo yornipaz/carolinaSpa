@@ -1,0 +1,9 @@
+@use 'abstract/mixin'as m;
+@use 'abstract/variable'as v;
+.cards{
+    &__wrapper{
+        @include m.screen('md') {
+            @include m.grid(3,2rem );
+        }
+    }
+}

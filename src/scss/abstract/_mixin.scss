@@ -124,7 +124,7 @@
   }
 }
 
-@mixin grid($column, $gap) {
+@mixin grid($column, $gap:5rem) {
   display: grid;
   grid-template-columns: repeat($column, 1fr);
   gap: $gap;
