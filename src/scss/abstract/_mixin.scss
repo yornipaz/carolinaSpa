@@ -124,7 +124,7 @@
   }
 }
 
-@mixin grid($column, $gap:5rem) {
+@mixin grid($column, $gap: 5rem) {
   display: grid;
   grid-template-columns: repeat($column, 1fr);
   gap: $gap;
@@ -204,30 +204,10 @@
   }
 }
 
-@mixin title($space: false) {
+@mixin title() {
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
-
-  span {
-    font-weight: 700;
-    @if ($space) {
-      display: block;
-    }
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    height: 1rem;
-    width: 15rem;
-    margin-top: 1rem;
-    background-image: linear-gradient(
-      to right,
-      v.$primary 0%,
-      v.$primary 50%,
-      lighten(v.$primary, 20%) 50%,
-      lighten(v.$primary, 20%) 100%
-    );
-  }
 }
 @mixin headingCursive() {
   text-align: center;

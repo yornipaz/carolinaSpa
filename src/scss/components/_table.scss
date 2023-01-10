@@ -1,0 +1,25 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.table {
+  width: 100%;
+  border: 5px solid v.$secondary;
+  text-align: center;
+  border-collapse: collapse;
+  &__header {
+    background-color: v.$secondary;
+  }
+  &__title{
+    padding: 1.5rem;
+  }
+  &__data{
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  &__row{
+    
+    &:hover{
+        background-color: darken($color: v.$primary, $amount: 10%);
+    }
+  }
+}
