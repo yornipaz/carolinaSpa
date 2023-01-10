@@ -1,0 +1,26 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+.appointment {
+  background-image: url(../img/bg_citas.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 0;
+  &__title {
+    @include m.title;
+    color: v.$white;
+    font-size: 6rem;
+  }
+  &__text {
+    max-width: 60rem;
+    margin: 0 auto;
+    color: v.$white;
+
+    line-height: 2;
+  }
+  &__link {
+    @include m.button(v.$primary, v.$white);
+    padding: 2rem 10rem;
+  }
+}

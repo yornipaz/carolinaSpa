@@ -153,15 +153,18 @@
                             <td class="table__data">Miercoles</td>
                             <td class="table__data">09:00</td>
                             <td class="table__data">19:00</td>
-                        </tr>   <tr class="table__row">
+                        </tr>
+                        <tr class="table__row">
                             <td class="table__data">Jueves</td>
                             <td class="table__data">09:00</td>
                             <td class="table__data">19:00</td>
-                        </tr>   <tr class="table__row">
+                        </tr>
+                        <tr class="table__row">
                             <td class="table__data">Viernes</td>
                             <td class="table__data">09:00</td>
                             <td class="table__data">19:00</td>
-                        </tr>   <tr class="table__row">
+                        </tr>
+                        <tr class="table__row">
                             <td class="table__data">Sabado</td>
                             <td class="table__data">09:00</td>
                             <td class="table__data">19:00</td>
@@ -169,7 +172,7 @@
                         <tr class="table__row">
                             <td class="table__data">Domingos</td>
                             <td class="table__data" colspan="2">Cerrado</td>
-                            
+
                         </tr>
 
                     </tbody>
@@ -177,9 +180,132 @@
             </div>
         </div>
     </section>
+    <main class="products container section">
+        <h2 class="products__title">Nuestros <span>productos</span></h2>
+        <div class="products__wrapper">
+            <div class="product">
+                <picture>
+                    <source srcset="dist/img/producto_01.avif" type="image/avif">
+                    <source srcset="dist/img/producto_01.webp " type="image/webp">
+                    <source srcset="dist/img/producto_01.jpg " type="image/jpeg">
+                    <img loading="lazy" class="product__img" decoding="async" src="dist/img/producto_01.jpg"
+                        lazyalt="imagen producto">
+                </picture>
+                <div class="product__content">
+                    <h3 class="product__name">Producto 1</h3>
+                    <p class="product__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                        aliquam neque</p>
+                    <p class="product__price">
+                        $25
+                    </p>
+                </div>
 
+            </div>
+            <!--Product-->
+            <div class="product">
+                <picture>
+                    <source srcset="dist/img/producto_02.avif" type="image/avif">
+                    <source srcset="dist/img/producto_02.webp " type="image/webp">
+                    <source srcset="dist/img/producto_02.jpg " type="image/jpeg">
+                    <img loading="lazy" class="product__img" decoding="async" src="dist/img/producto_02.jpg"
+                        lazyalt="imagen producto">
+                </picture>
+                <div class="product__content">
+                    <h3 class="product__name">Producto 2</h3>
+                    <p class="product__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                        aliquam neque</p>
+                    <p class="product__price">
+                        $25
+                    </p>
+                </div>
 
+            </div>
+            <!--Product-->
+            <div class="product">
+                <picture>
+                    <source srcset="dist/img/producto_03.avif" type="image/avif">
+                    <source srcset="dist/img/producto_03.webp " type="image/webp">
+                    <source srcset="dist/img/producto_03.jpg " type="image/jpeg">
+                    <img loading="lazy" class="product__img" decoding="async" src="dist/img/producto_03.jpg"
+                        lazyalt="imagen producto">
+                </picture>
+                <div class="product__content">
+                    <h3 class="product__name">Producto 3</h3>
+                    <p class="product__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                        aliquam neque</p>
+                    <p class="product__price">
+                        $25
+                    </p>
+                </div>
+
+            </div>
+            <!--Product-->
+            <div class="product">
+                <picture>
+                    <source srcset="dist/img/producto_04.avif" type="image/avif">
+                    <source srcset="dist/img/producto_04.webp " type="image/webp">
+                    <source srcset="dist/img/producto_04.jpg " type="image/jpeg">
+                    <img loading="lazy" class="product__img" decoding="async" src="dist/img/producto_04.jpg"
+                        lazyalt="imagen producto">
+                </picture>
+                <div class="product__content">
+                    <h3 class="product__name">Producto 4</h3>
+                    <p class="product__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                        aliquam neque</p>
+                    <p class="product__price">
+                        $25
+                    </p>
+                </div>
+
+            </div>
+            <!--Product-->
+        </div>
+    </main>
+
+    <section class="appointment">
+        <h2 class="appointment__title">Realiza una cita</h2>
+        <p class="appointment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi labore ullam alias
+            facilis error eos, ea nobis obcaecati doloribus, aliquam reiciendis voluptatibus molestias !</p>
+        <a href="#" class="appointment__link">leer mas</a>
+    </section>
     <footer class="footer">
+        <div class="footer__wrapper container section">
+            <div class="footer__item">
+                <h3 class="footer__title">Nosotros</h3>
+                <p class="footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea dolorum odio
+                    molestias iure corrupti illum consequuntur fugiat laudantium ab repellat</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Horario</h3>
+                <p class="footer__text">Lun-Vie: 9AM - 7PM</p>
+                <p class="footer__text">Sabado: 9AM - 2PM</p>
+                <p class="footer__text">Domingo: Cerrado</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Contacto</h3>
+                <p class="footer__text">Av. Occidental #18-35</p>
+                <nav class="network">
+                    <a class="network__link" href="https://facebook.com">
+                        <span class="network__access"></span>
+                    </a>
+                    <a class="network__link" href="https://twitter.com">
+                        <span class="network__access">Twitter</span>
+                    </a>
+                    <a class="network__link" href="https://instagram.com">
+                        <span class="network__access">Instagram</span>
+                    </a>
+                    <a class="network__link" href="https://youtube.com">
+                        <span class="network__access">Youtube</span>
+                    </a>
+                    <a class="network__link" href="https://tiktok.com">
+                        <span class="network__access">Tiktok</span>
+                    </a>
+
+                </nav>
+
+            </div>
+        </div>
+        <p class="footer__copy">Todos los derechos reservados @YFBP</p>
 
 
     </footer>

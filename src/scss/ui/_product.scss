@@ -1,0 +1,28 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.product {
+  &__content {
+    background-color: v.$white;
+    padding: 2rem;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__name {
+    color: v.$secondary;
+    @include m.title;
+    font-size: 2.4rem;
+  }
+  &__description {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+  &__price {
+    text-align: center;
+    color: v.$grey;
+    font-size: 2.8rem;
+    margin: 0;
+  }
+}
