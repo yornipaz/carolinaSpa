@@ -1,5 +1,7 @@
 @use "abstract/mixin" as m;
 @use "abstract/variable" as v;
-.testimonial {
-
+.swiper {
+  &__img{
+    width: 100%;
+  }
 }

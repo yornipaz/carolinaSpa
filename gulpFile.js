@@ -44,6 +44,7 @@ function dev() {
     watch('src/scss/page/*.scss', pagesCss);
     watch('src/img/**/*', image);
     watch("./*.html").on('change', browserSync.reload);
+    watch("src/js/*.js").on('change', browserSync.reload);
 }
 
 function versionWebp() {

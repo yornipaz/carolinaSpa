@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carolina Space</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -45,30 +46,30 @@
         </div>
     </div>
 
-    <section class="slider">
-        <ul class="slider__container">
-            <li class="slider__item">
+    <section class="swiper container ">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
                 <picture>
                     <source srcset="dist/img/slide_01.avif " type="image/avif">
                     <source srcset="dist/img/slide_01.webp  " type="image/webp">
                     <source srcset="dist/img/slide_01.jpg  " type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="dist/img/slide_01.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_01.jpg" lazyalt="imagen" class="swiper__img">
                 </picture>
             </li>
-            <li class="slider__item">
+            <li class="swiper-slide">
                 <picture>
                     <source srcset="dist/img/slide_02.avif " type="image/avif">
                     <source srcset="dist/img/slide_02.webp  " type="image/webp">
                     <source srcset="dist/img/slide_02.jpg  " type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="dist/img/slide_02.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_02.jpg" lazyalt="imagen" class="swiper__img">
                 </picture>
             </li>
-            <li class="slider__item">
+            <li class="swiper-slide">
                 <picture>
                     <source srcset="dist/img/slide_03.avif " type="image/avif">
                     <source srcset="dist/img/slide_03.webp  " type="image/webp">
                     <source srcset="dist/img/slide_03.jpg  " type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="dist/img/slide_03.jpg" lazyalt="imagen">
+                    <img loading="lazy" decoding="async" src="dist/img/slide_03.jpg" lazyalt="imagen" class="swiper__img">
                 </picture>
             </li>
         </ul>
@@ -309,7 +310,7 @@
 
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 
